@@ -1,8 +1,4 @@
-import 'package:flutter/cupertino.dart';
-
-import '../screen/CartPage/cartpage.dart';
-import '../screen/HomePage/home_page.dart';
-import '../screen/SplashScreenPage/splashscreen.dart';
+import 'package:quotes/header.dart';
 
 class QuotesRoutes {
   QuotesRoutes._();

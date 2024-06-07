@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:quotes/controller/like_conteroller.dart';
-import 'package:quotes/controller/quotes_conroller.dart';
-
-import '../../controller/theme_cantroller.dart';
-import '../../routes/quotes_routes.dart';
+import 'package:quotes/header.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

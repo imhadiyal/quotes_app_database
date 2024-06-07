@@ -1,7 +1,6 @@
-import 'dart:convert';
+import 'package:quotes/header.dart';
 
 import 'package:http/http.dart' as http;
-import 'package:quotes/modals/quotes_modals.dart';
 
 class QuotseServices {
   QuotseServices._();

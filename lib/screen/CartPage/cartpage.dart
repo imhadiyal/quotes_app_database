@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-
-import '../../controller/quotes_conroller.dart';
-import '../../modals/quotes_modals.dart';
+import 'package:quotes/header.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});

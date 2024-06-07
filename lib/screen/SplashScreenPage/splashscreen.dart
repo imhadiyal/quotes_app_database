@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quotes/routes/quotes_routes.dart';
+import 'package:quotes/header.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

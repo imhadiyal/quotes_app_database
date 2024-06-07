@@ -1,7 +1,4 @@
-import 'package:logger/logger.dart';
-import 'package:sqflite/sqflite.dart';
-
-import '../modals/quotes_modals.dart';
+import 'package:quotes/header.dart';
 
 enum QuoteTable { id, quote, author }
 

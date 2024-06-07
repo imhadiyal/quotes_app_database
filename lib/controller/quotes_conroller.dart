@@ -1,9 +1,4 @@
-import 'package:flutter/foundation.dart';
-import 'package:logger/logger.dart';
-import 'package:quotes/assets/services/qutose_services.dart';
-import 'package:quotes/modals/quotes_modals.dart';
-
-import '../helper/quotes_helper.dart';
+import '../header.dart';
 
 class QuoteController extends ChangeNotifier {
   QuoteController() {

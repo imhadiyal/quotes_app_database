@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:quotes/header.dart';
 
 class ThemeCantroller extends ChangeNotifier {
   bool isDark = false;
