@@ -10,18 +10,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      themeMode: Provider.of<ThemeCantroller>(context).themeMode,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.amberAccent,
-          brightness: Brightness.light,
+        themeMode: Provider.of<ThemeCantroller>(context).themeMode,
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(
+            brightness: Brightness.light,
+            seedColor: Colors.cyanAccent,
+          ),
         ),
-      ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
-      debugShowCheckedModeBanner: false,
-      routes: QuotesRoutes.quotesRoutes.route,
-    );
+        darkTheme: ThemeData(
+          brightness: Brightness.dark,
+        ),
+        debugShowCheckedModeBanner: false,
+        routes: QuotesRoutes.quotesRoutes.route);
   }
 }
