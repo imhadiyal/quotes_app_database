@@ -14,7 +14,7 @@ class CartPage extends StatelessWidget {
         Provider.of<QuoteController>(context, listen: false);
     return Scaffold(
       appBar: AppBar(
-        title: const Text("cartpag"),
+        title: const Text("Cart Page"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),

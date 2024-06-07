@@ -43,48 +43,35 @@ class HomePage extends StatelessWidget {
             : ListView.builder(
                 itemCount: mutabal.allquotes.length,
                 itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      Navigator.pushNamed(
-                          context, QuotesRoutes.quotesRoutes.detailpage,
-                          arguments: mutabal.allquotes[index]);
-                    },
-                    child: ListTile(
-                      // dense: true,
-                      // autofocus: true,
-                      // enabled: true,
-                      // enableFeedback: true,
-                      // isThreeLine: true,
-                      // selected: true,
-                      title: Text(mutabal.allquotes[index].quote),
-                      subtitle: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          Row(
-                            children: [
-                              Text('-${mutabal.allquotes[index].author}'),
-                              const Spacer(),
-                              IconButton(
-                                onPressed: () {
-                                  unmutabale.addFavQuoteInDataBase(
-                                      quote: mutabal.allquotes[index]);
-                                  Provider.of<LikeController>(context,
-                                          listen: false)
-                                      .ChangeLike();
-                                },
-                                icon: Icon(
-                                  (Provider.of<LikeController>(context).like)
-                                      ? Icons.favorite_border
-                                      : Icons.favorite,
-                                ),
-                              )
-                            ],
-                          ),
-                        ],
-                      ),
+                  return ListTile(
+                    title: Text(mutabal.allquotes[index].quote),
+                    subtitle: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Row(
+                          children: [
+                            Text('-${mutabal.allquotes[index].author}'),
+                            const Spacer(),
+                            IconButton(
+                              onPressed: () {
+                                unmutabale.addFavQuoteInDataBase(
+                                    quote: mutabal.allquotes[index]);
+                                Provider.of<LikeController>(context,
+                                        listen: false)
+                                    .ChangeLike();
+                              },
+                              icon: Icon(
+                                (Provider.of<LikeController>(context).like)
+                                    ? Icons.favorite_border
+                                    : Icons.favorite,
+                              ),
+                            )
+                          ],
+                        ),
+                      ],
                     ),
                   );
                 },
